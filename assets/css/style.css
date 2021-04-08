@@ -1,0 +1,79 @@
+body{text-align: center;}
+
+.container{
+    margin-top: 0.1in;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.item1{
+    /*border: #000000 groove 10px ;*/
+    border: #000000 groove 1px ;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    padding-left: 10px;
+}
+.item2{
+    margin-top: 10px;
+    border: #000000 groove 1px ;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    padding-left: 10px;
+}
+.item3{
+    margin-top: 10px;
+    border: #000000 groove 1px ;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    padding-left: 10px;
+}
+.item4{
+    margin-top: 10px;
+    border: #000000 groove 1px ;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    padding-left: 10px;
+}
+.item5{
+    margin-top: 10px;
+    border: #000000 groove 1px ;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    padding-left: 10px;
+}
+.item6{
+    margin-top: 10px;
+    border: #000000 groove 1px ;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    padding-left: 10px;
+}
+.bgimg{
+    background-image: url("https://avatars.githubusercontent.com/u/48108872?s=400&u=84acb5787f1f61695301a7a766cc5c022e0203c8&v=4");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    color:lightyellow;
+}
+@media screen and (max-width : 436px){
+    .item4{
+           width: 386px;
+           overflow: scroll;/*Scrool when content overflows of border*/
+ 
+    }
+}

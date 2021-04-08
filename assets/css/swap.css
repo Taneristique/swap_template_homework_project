@@ -1,0 +1,71 @@
+#swap_container{
+    margin: 1.5in auto; 
+    display: flex;   
+    flex-direction: column; 
+    width: calc(70%);/*Calculate and set page with to 70% of device width*/
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+    border: #000000 groove 2px ;
+    box-sizing:border-box; /*It guarantees that the content box shrinks to make space for the padding and borders. */
+    border-radius: 5%; 
+    font-size: 1.2em;
+    background-image: linear-gradient(to left, rgb(106, 194, 164),  rgb(156, 104, 14));
+    color:#ffffff
+}
+.from_box{
+    border: 1px dotted #221010;
+    width: calc(50%);
+    width: 80%;
+    border-radius: 4%;
+    box-sizing: border-box;
+
+}
+.from_box>select{
+    width: calc(30%);
+
+}
+.from{
+    display: inline;/*inline element*/
+    box-sizing: border-box;
+}
+
+.from>select{
+    width: calc(12%);
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-color:rgb(120, 198, 204);
+
+}
+.to>select{
+    width: calc(12%);
+    margin-top: 1vh; /*The measure vh is equal to 1/100 of the height of the viewport.*/
+    box-sizing: border-box;
+    background-color:rgb(120, 198, 204);
+    border-radius: 20px;
+
+
+}
+.to{
+    display: inline;
+    box-sizing: border-box;
+
+}
+#to_swap_amount{
+    width: calc(30%);
+    border-radius: 20px;
+    background-color:rgb(83, 184, 128);
+}
+#from_swap_amount{
+    width: calc(30%);
+    border-radius: 20px;
+    background-color:rgb(83, 184, 128);
+}
+#swap_button{
+    box-sizing: border-box;
+    border-radius: 20px;
+    font-size:1em;
+    background-image: linear-gradient(to left, rgb(106, 194, 164),  rgb(156, 104, 14));
+    position: relative;
+    margin-top: 1vh;
+}

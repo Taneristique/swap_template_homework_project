@@ -1,0 +1,120 @@
+.wrapper{
+    display: flex;
+    flex-direction: center;
+    flex-wrap: wrap;
+    margin:auto;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.bgimage{
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap; /*It will wrap the flex items onto multiple lines for IOS navigators.*/
+
+
+    margin-top: 0.7in;
+}
+
+.i1{
+    width: 250px;
+    height: 250px;
+    border: 7px groove rgb(90, 153, 90);
+    border-radius: 20px;
+    background-size: cover;
+    background-image:url( 'https://raw.githubusercontent.com/Taneristique/swap_template_homework_project/testing/assets/images/beforeproof.JPG')
+}
+.i2{
+    width: 250px;
+    height: 250px;
+    border: 7px groove rgb(90, 153, 90);
+    border-radius: 20px;
+    background-size: cover;
+    background-image:url( 'https://raw.githubusercontent.com/Taneristique/swap_template_homework_project/testing/assets/images/beta.JPG')
+}
+.i3{
+    width: 250px;
+    height: 250px;
+    border: 7px groove rgb(90, 153, 90);
+    border-radius: 20px;
+    background-size: cover;
+    background-image: url('https://raw.githubusercontent.com/Taneristique/swap_template_homework_project/testing/assets/images/cap.JPG');
+}
+.i4{
+    width: 250px;
+    height: 250px;
+    border: 7px groove rgb(90, 153, 90);
+    border-radius: 20px;
+    background-size: cover;
+    background-image: url("https://raw.githubusercontent.com/Taneristique/swap_template_homework_project/testing/assets/images/cc.JPG")
+}
+
+.i5{
+    width: 250px;
+    height: 250px;
+    border: 7px groove rgb(90, 153, 90);
+    border-radius: 20px;
+    background-size: cover;
+    background-image: url("https://raw.githubusercontent.com/Taneristique/swap_template_homework_project/testing/assets/images/night.JPG")
+}
+.i6{
+    width: 250px;
+    height: 250px;
+    border: 7px groove rgb(90, 153, 90);
+    border-radius: 20px;
+    background-size: cover;
+    background-image: url('https://raw.githubusercontent.com/Taneristique/swap_template_homework_project/testing/assets/images/orn.JPG');
+}
+.i7{
+    width: 250px;
+    height: 250px;
+    border: 7px groove rgb(90, 153, 90);
+    border-radius: 20px;
+    background-size: cover;
+    background-image: url('https://raw.githubusercontent.com/Taneristique/swap_template_homework_project/testing/assets/images/taner1.JPG');
+}
+.i8{
+    width: 250px;
+    height: 250px;
+    border: 7px groove rgb(90, 153, 90);
+    border-radius: 20px;
+    background-size: cover;
+    background-image: url('https://raw.githubusercontent.com/Taneristique/swap_template_homework_project/testing/assets/images/taner2.JPG')
+}
+
+.i9{
+    width: 250px;
+    height: 250px;
+    border: 7px groove rgb(90, 153, 90);
+    border-radius: 20px;
+    background-size: cover;
+    background-image: url('https://raw.githubusercontent.com/Taneristique/swap_template_homework_project/testing/assets/images/taner3.JPG')
+}
+.i10{
+    width: 250px;
+    height: 250px;
+    border: 7px groove rgb(90, 153, 90);
+    border-radius: 20px;
+    background-size: cover;
+    background-image: url('https://raw.githubusercontent.com/Taneristique/swap_template_homework_project/testing/assets/images/testnetwork.JPG');
+}
+.i11{
+    width: 250px;
+    height: 250px;
+    border: 7px groove rgb(90, 153, 90);
+    border-radius: 20px;
+    background-size: cover;
+    background-image: url('https://raw.githubusercontent.com/Taneristique/swap_template_homework_project/testing/assets/images/taner2.JPG');
+}
+.i12{
+    width: 250px;
+    height: 250px;
+    border: 7px groove rgb(90, 153, 90);
+    border-radius: 20px;
+    background-size: cover;
+    background-image: url('https://raw.githubusercontent.com/Taneristique/swap_template_homework_project/testing/assets/images/testnetwork.JPG');
+}
+button.vote-button{
+    border-radius: 50px;
+    background-color: rgb(128, 155, 56);
+}

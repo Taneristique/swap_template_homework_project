@@ -1,0 +1,196 @@
+/*references:https://www.w3schools.com/cssref/css_units.asp,https://cubic-bezier.com/#.4,0,.2,.1,
+https://qastack.info.tr/programming/3468154/what-is-webkit-and-how-is-it-related-to-css#:~:text=1-,Webkit%2C%20pop%C3%BCler%20taray%C4%B1c%C4%B1lar%20Safari%20ve%20Chrome'da%20ve%20di%C4%9Ferlerinde%20kullan%C4%B1lan,bir%20olu%C5%9Fturma%20motoru%20taraf%C4%B1ndan%20desteklenir.
+https://www.w3schools.com/cssref/pr_pos_z-index.asp
+https://www.yazilimbilisim.net/web/css/css-display-kullanimi/#:~:text=display%20%3A%20inline%3B,kullanarak%20basit%20bir%20men%C3%BC%20yapabilirsiniz.&text=%C3%B6%C4%9Feleri%20normal%20g%C3%B6r%C3%BCnt%C3%BCleme%20de%C4%9Feri%20blok%20yap%C4%B1dad%C4%B1r.
+https://developer.mozilla.org/en-US/docs/Web/CSS/transform
+*/
+.navbar{
+    color: #ffffff;
+    background-image: linear-gradient(to bottom, rgb(226, 228, 123), rgb(92, 43, 43));
+    width: calc(100%);
+    position: relative;
+    height: 0.5in;
+    padding-top: 2.5vh;
+
+}
+
+.navlink{
+    text-decoration: none;
+    color:chartreuse;
+    font-size: 1.2em;
+}
+
+.obj1{
+    margin-left: 1vh;
+    font-style: italic;
+    font-size: 1.3em;
+}
+.obj2{
+    margin-left: 1vh;
+}
+
+.obj3{
+    margin-left: 1vh;
+}
+
+.obj4{
+    margin-left: 1vh;
+    
+}
+
+.obj5{
+    margin-left: 1vh;
+}
+.navlink:hover{
+    color:#ffffff93;
+    opacity: 50%;
+}
+#connect-wallet{
+    margin-left: 1vh;
+    box-sizing: border-box;
+    border-radius: 20px;
+    font-size:1.2em;
+    background-image: linear-gradient(to left, rgb(106, 194, 164),  rgb(156, 104, 14));
+    position: fixed;
+
+}
+.toggle {
+    position: absolute;
+    cursor: pointer;
+    top: 20px;
+    right: 25px;
+    font-size: 150%;
+}
+
+.toggle:before { /*Before activating span object with toogle class*/
+    content: '☀️'; /*This content will show when website is in day mode*/
+}
+
+.toggle.active:before { /*After activating*/
+    content: '🌒';/*This content will show when website is in night mode*/
+}
+.toggle.animate {
+    animation: animate .3s cubic-bezier(0.4, 0.0, 0.2, 1);/*A Cubic Bezier curve is defined by four points P0, P1, P2, and P3. 
+    P0 and P3 are the start and the end of the curve and, in CSS these points are fixed as the coordinates are ratios. P0 is (0, 0) 
+    and represents the initial time and the initial state, P3 is 
+    (1, 1) and represents the final time and the final state.Animation name is animate and duration 3seconds*/
+}
+
+
+@keyframes animate {  /*Scalings in moments of animation.*/
+    0%   { transform: scale(1); }
+    50%  { transform: scale(0); }
+    100% { transform: scale(1); }
+}
+@media screen and (max-width : 436px){ 
+    .navbar{
+        position: relative;
+    }
+
+
+    .obj1{
+        margin-left: 2px;
+        font-size: 1em;
+
+    }
+    .obj2{
+        margin-left: 2px;
+        font-size: 1em;
+
+    }
+
+    .obj3{
+        margin-left: 2px;
+        font-size: 1em;
+
+    }
+
+    .obj4{
+        margin-left: 2px;
+        font-size: 1em;
+        }
+   
+
+    .obj5{
+        margin-left: 2px;
+        font-size: 1em;
+
+    }
+    #connect-wallet{
+        flex-direction: row;
+        -webkit-box-pack: justify; /*It justifys(aligns horizontaly box in just ios navigators(almost all of the ios navigators included
+        (Chrome, Safari, Opera and iOS),-moz- is selector for only Firefox navigator,-ms- for internet explorer and microsoft edge for more 
+        infos please consider checking references
+        */ 
+        max-width: 840px;
+        padding: 1rem;
+        position: fixed;
+        bottom: 0px;
+        left: -7px;
+        width: 100%;
+        z-index: 99; /*z-index determines if the element will be situated up or down when element is in same z scale with 
+        other elements(it does not affect container,and negative integers allowed)*/
+        height: 72px;
+        border-radius: 12px 12px 0px 0px;
+        background-color: rgb(33, 36, 41);
+        opacity: 80%;
+        font-size: 1.2em;
+    }
+    .toggle{
+        top: 10px;
+        right: -1px;
+
+    }
+
+}
+
+@media screen and (device-width:768px) { /*For general iPad layouts */
+    */
+    .toggle{
+        top: 21px;
+        right: -3px;
+
+    }
+    #connect-wallet{
+        position: relative;
+    }
+}
+
+
+@media screen and (device-width:320px) { /*for small phones*/
+    .toggle{
+        top: 37px;
+        right: 130px;
+
+    }
+}
+    @media screen and (device-width:280px) { /*for general Galaxy layouts fits perfect to Galaxy Fold*/
+        .toggle{
+            top: 28px;
+            right: 85px;
+    
+        }
+        #connect-wallet{
+            margin-right: 1vh;
+        }
+}
+@media screen and  (device-width: 540px) and (device-height: 720px)
+
+     {/*For surface duo*/
+
+        #connect-wallet{position:relative;}
+        .toggle{
+            top:36px;
+            right:250px;
+        }
+}
+
+@media screen and  (device-width: 1024px) and (device-height: 1366px)
+
+     {/*For ipad pro*/
+
+        #connect-wallet{position:relative;}
+        .toggle{
+            top:28px;
+        }
+}
