@@ -1,12 +1,19 @@
-    if(localStorage.getItem('counter')==2){
-        document.querySelector('body').style.backgroundColor="black"
-        document.querySelector('body').style.color="white"
-        document.querySelector('.toggle').classList.toggle('active') /*If page is dark themed .toggle.active:before selector's content will be showed.
-        I lived trouble with changing toogle to moon automatically when them is darked.*/
-
+if(parseInt(localStorage['count'])%2==0){ /*Night mode will selected when the modulus of localstorage value is 0 */
+    document.querySelector('body').style.backgroundColor="black"
+    document.querySelector('body').style.color="white"
+    toggle.classList.toggle('active') /*Since night mode selected user will see moon.*/
+    x=document.querySelectorAll(".bgimg")
+    for (i = 0; i < x.length; i++) {
+        x[i].style.color = "white";
+      
     }
-    else{
-        document.querySelector('body').style.backgroundColor="white"
-        document.querySelector('body').style.color="black"
 }
-/*This code will set dark or white theme with correct toogle according to localStorage value*/
+else{ /*Otherwise user will use this site in day mode.*/
+ document.querySelector('body').style.backgroundColor="white"
+ document.querySelector('body').style.color="black"
+
+ x=document.querySelectorAll(".bgimg")
+ for (i = 0; i < x.length; i++) {
+     x[i].style.color = "lightyellow";
+ 
+ }}
